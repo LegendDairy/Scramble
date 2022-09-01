@@ -40,6 +40,12 @@ game_c::game_c(sf::RenderWindow *w,sf::View *v)
   game_over_menu = new game_over_menu_c();
 }
 
+game_c::~game_c()
+{
+  delete pause_menu;
+  delete game_over_menu;
+}
+
 /* Deze methode zet alle objecten klaar om het spel te starten. */
 void game_c::game_start()
 {

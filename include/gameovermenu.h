@@ -16,7 +16,7 @@
 #define GAME_OVER_STATE_NO_FUEL           2
 #define GAME_OVER_STATE_ASTEROID_CRASH    3
 
-static const char *game_over_strings[4];
+//static const char *game_over_strings[4];
 
 /* Menu dat op het einde van het spel de score verteld en manier dat het einde bereikt werd. */
 /* Gaat in de game_over_list van de game_object_hancler_c*/

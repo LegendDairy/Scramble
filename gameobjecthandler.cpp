@@ -14,6 +14,20 @@ gameobject_handler_c::gameobject_handler_c()
   game_list = 0;
 }
 
+/* Destructor van de class. */
+gameobject_handler_c::~gameobject_handler_c()
+{
+  gameobject_c *iterator = game_list;
+  gameobject_c *prev = 0;
+
+  while(iterator)
+  {
+     prev = iterator;
+     iterator = iterator->get_next();
+     delete prev;
+  }
+}
+
 /* Geeft de enige bestaande instantie van de singleton terug. */
 gameobject_handler_c *gameobject_handler_c::get_handler()
 {

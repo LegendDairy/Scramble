@@ -25,6 +25,12 @@ player_c::player_c(float x0, float y0) : gameobject_c(x0,y0,GAME_SCROLLING_SPEED
   figure->setTexture(texture, true);
 }
 
+player_c::~player_c()
+{
+  delete texture;
+  delete figure;
+}
+
 void player_c::tick(void)
 {
   x += vx;

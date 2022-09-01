@@ -28,7 +28,7 @@ public:
   /* Doet alle acties die moeten gebeuren in een tijdstick. */
   void tick();
   player_c(float x, float y);
-  ~player_c(){};
+  ~player_c();
 
   /* Geeft de score van de speler. */
   unsigned int get_score();

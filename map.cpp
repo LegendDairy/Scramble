@@ -24,6 +24,11 @@ map_c::map_c(gameobject_handler_c *obj_handler): gameobject_c(0,0,0,0,map_id)
   }
 }
 
+map_c::~map_c()
+{
+  delete line;
+}
+
 void map_c::render(sf::RenderWindow *w)
 {
   w->draw(*line);

@@ -21,6 +21,7 @@ class game_c
     static game_c *game;                      // De enige instantie van de classe
     static int state;                         // De state van het spel (pauze, lopend, einde)
     game_c(sf::RenderWindow *w,sf::View *v);  // De private constructior (singleton)
+    ~game_c();
     sf::View *view;                           // De camera (zorgt voor beweging over de map)
     sf::RenderWindow *window;                 // De window waarop getekend zal worden.
     gameobject_handler_c *obj_handler;        // Deze classe zal alle objecten in het spelen besturen

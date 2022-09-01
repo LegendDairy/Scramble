@@ -25,7 +25,7 @@ public:
   void render(sf::RenderWindow *w);
   void tick();
   map_c(gameobject_handler_c *obj_handler);
-  ~map_c(){}
+  ~map_c();
   /* Geeft de hoogt van de onderliggende berg op positie x. */
   float get_map_height(float x);
   /* Is er onder x een stijgende (true) of dalende (false) helling? */

@@ -18,6 +18,7 @@ class gameobject_handler_c
 
     /* Constructor is private want het is een singleton class. */
     gameobject_handler_c();
+    ~gameobject_handler_c();
     /* De enige instantie van deze singleton class. */
     static gameobject_handler_c *go_handler;
     static sf::RenderWindow *window;
