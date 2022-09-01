@@ -28,6 +28,7 @@ asteroid_c::~asteroid_c()
 {
   n_asteroids--;
   delete figure;
+  delete texture;
 }
 
 void asteroid_c::render(sf::RenderWindow *w)

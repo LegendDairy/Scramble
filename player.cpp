@@ -44,7 +44,7 @@ void player_c::tick(void)
 
   if(fuel_level != 0) { fuel_level--; }
 
-  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q))
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
   {
     this->set_position(sf::Vector2f(x-4,y));
   }
@@ -52,7 +52,7 @@ void player_c::tick(void)
   {
     this->set_position(sf::Vector2f(x+4,y));
   }
-  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Z))
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
   {
     this->set_position(sf::Vector2f(x,y-3));
   }
